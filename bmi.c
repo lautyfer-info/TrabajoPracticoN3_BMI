@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(int argc, char *argv[]) {
-	
+	// REPOSITORIO:  https://github.com/lautyfer-info/TrabajoPracticoN3_BMI.git
 	float p,a, imc;
 	do{
 	printf("Ingrese el peso en kg: "); scanf("%f", &p);
