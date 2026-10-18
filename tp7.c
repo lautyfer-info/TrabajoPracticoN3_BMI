@@ -1,4 +1,4 @@
-// Repositorio:
+// Repositorio: https://github.com/lautyfer-info/TrabajoPracticoN3_BMI.git
 
 #include <stdio.h>
 
@@ -13,10 +13,10 @@ int main() {
 	
 	for (int i = 0; i < TAM; i++) {
 		do {
-			printf("Ingrese el código de barras (1-999999999): ");
+			printf("Ingrese el cÃ³digo de barras (1-999999999): ");
 			scanf("%d", &codigos[i]);
 			if (codigos[i] < 1 || codigos[i] > 999999999) {
-				printf("Error. El código de barras debe estar entre 1 y 999999999\n");
+				printf("Error. El cÃ³digo de barras debe estar entre 1 y 999999999\n");
 			}
 		} while (codigos[i] < 1 || codigos[i] > 999999999);
 		
@@ -31,7 +31,7 @@ int main() {
 		printf("\n");
 	}
 	
-	printf("\nCódigo\t\tPrecio\n");
+	printf("\nCÃ³digo\t\tPrecio\n");
 	for (int i = 0; i < TAM; i++) {
 		printf("%7d\t\t%.2f\n", codigos[i], precios[i]);
 	}
@@ -45,8 +45,8 @@ int main() {
 		}
 	}
 	
-	printf("\nMás caro: [%d] %.2f", codigos[pos_mayor], precios[pos_mayor]);
-	printf("\nMás barato: [%d] %.2f\n", codigos[pos_menor], precios[pos_menor]);
+	printf("\nMÃ¡s caro: [%d] %.2f", codigos[pos_mayor], precios[pos_mayor]);
+	printf("\nMÃ¡s barato: [%d] %.2f\n", codigos[pos_menor], precios[pos_menor]);
 	
 	return 0;
 }
